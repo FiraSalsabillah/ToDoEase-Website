@@ -1,0 +1,94 @@
+/* Mengimpor font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #DED0B6;
+}
+
+.logo {
+    margin-right: 100px;
+}
+
+.logo img {
+    width: 500px;
+    height: 500px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    color: #54473F;
+    margin-right: 100px; /* Geser ke kiri dari tepi kanan */
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #54473F;
+}
+
+form label {
+    font-weight: bold;
+    color: #54473F;
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #DED0B6;
+    border: none;
+    font-size: 14px;
+    border-bottom: 2px solid #9A7E6F; /* Warna garis bawah saat fokus */
+}
+
+/* Menghilangkan border saat input difokuskan */
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FEFAE0;
+    color: #54473F;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #9A7E6F;
+    color: #fff;
+}
+
+form p {
+    text-align: center;
+    margin-top: 20px;
+    color: #54473F;
+}
+
+form p a {
+    color: #54473F;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 7px;
+}

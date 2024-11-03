@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <!-- Include Chart.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <link rel="stylesheet" href="report.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <img src="Todoease.png" alt="Logo" class="logo-img">
+        <div class="nav-cta-container">
+            <nav class="nav">
+                <ul>
+                    <li><a href="beranda.html">Home</a></li>
+                    <li><a href="tasks.html">Tasks</a></li>
+                    <li><a href="report.html">Report</a></li>
+                </ul>
+            </nav>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <!-- Teks Sebelum Kontainer -->
+    <h2 class="status-heading">Report Activity</h2>
+
+    <!-- Input Tanggal -->
+    <div class="date-selector">
+        <label for="reportDate">Pilih Tanggal:</label>
+        <input type="date" id="reportDate" />
+        <button id="loadReportBtn">Load Report</button>
+    </div>
+
+    <!-- Kontainer Atas -->
+    <div class="container-wrapper">
+        <div class="container">
+            <h3>Tugas Selesai</h3>
+            <div class="chart-container">
+                <canvas id="completedTasksChart"></canvas>
+                <div class="container-chart-percentage"></div>
+            </div>
+        </div>
+        <div class="container">
+            <h3>Tugas Tertunda</h3>
+            <div class="chart-container">
+                <canvas id="pendingTasksChart"></canvas>
+                <div class="container-chart-percentage"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontainer Bawah -->
+    <div class="container-bawah">
+        <h2>Capaian Mingguan</h2>
+        <div class="weekly-charts-wrapper">
+            <div class="weekly-chart-container">
+                <div class="chart-title">Tugas Selesai</div>
+                <canvas id="weeklyCompletedChart"></canvas>
+            </div>
+            <div class="weekly-chart-container">
+                <div class="chart-title">Tugas Tertunda</div>
+                <canvas id="weeklyPendingChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div>
+            <p>&copy; 2024 ToDoEase. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="report.js"></script>
+</body>
+</html>

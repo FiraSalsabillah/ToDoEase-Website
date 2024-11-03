@@ -1,0 +1,240 @@
+/* Mengimpor font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variabel CSS untuk warna utama */
+:root {
+    --primary-color: #9A7E6F;
+    --secondary-color: #fff;
+    --text-color: #54473F;
+    --background-light: #f8f9fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #A79277;
+    color: var(--text-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #DED0B6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px;
+}
+
+.logo-img {
+    width: 300px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.nav-cta-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav {
+    margin-right: 30px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #fff;
+}
+
+.logout-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    margin-left: 30px;
+}
+
+.logout-btn:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.status-heading {
+    text-align: left;
+    color: #FEFAE0;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+.date-selector {
+    color: #FEFAE0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.date-selector label {
+    margin-right: 10px;
+}
+
+.date-selector input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.date-selector button {
+    background-color: #FEFAE0;
+    color: var(--text-color);
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+.container:nth-child(1) {
+    background-color: #FEFAE0;
+}
+
+.container:nth-child(2) {
+    background-color: #FEFAE0;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Pusatkan secara horizontal */
+    justify-content: center; /* Pusatkan secara vertikal */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 300px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #54473F;
+    position: relative;
+}
+
+.chart-container {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-chart-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    font-weight: bold;
+    color: #9A7E6F;
+}
+
+.container-bawah {
+    flex: 1;
+    background-color: #A79277;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 350px;
+    max-width: 96%;
+    color: #FEFAE0;
+}
+
+/* Kontainer untuk grafik mingguan */
+.weekly-chart-container {
+    width: 100%;
+    height: 300px; /* Atur tinggi grafik sesuai kebutuhan */
+    margin-top: 20px;
+    margin-bottom: 80px; /* Tambah margin bawah untuk pemisahan */
+    padding: 10px 20px 50px 20px;
+    background-color: #fff; /* Warna latar belakang kontainer */
+    border-radius: 10px; /* Sudut kontainer yang membulat */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan untuk kedalaman */
+}
+
+/* Judul untuk grafik mingguan */
+.chart-title {
+    font-size: 20px; /* Ukuran font yang lebih besar untuk judul */
+    color: var(--primary-color); /* Warna teks judul sesuai dengan warna utama */
+    margin-bottom: 15px; /* Jarak di bawah judul */
+    text-align: left; /* Rata kiri untuk judul */
+}
+
+/* Styling untuk label sumbu X dan Y */
+.chart-labels {
+    font-size: 16px; /* Ukuran font label */
+    color: #FEFAE0; /* Warna teks label */
+}
+
+/* Styling untuk legend jika ada */
+.chart-legend {
+    display: flex;
+    justify-content: center; /* Rata tengah */
+    margin-top: 10px; /* Jarak di atas legend */
+}
+
+/* Setiap item dalam legend */
+.chart-legend-item {
+    margin-right: 20px; /* Jarak antar item legend */
+    display: flex;
+    align-items: center; /* Pusatkan item secara vertikal */
+}
+
+.chart-legend-color {
+    width: 12px; /* Lebar kotak warna */
+    height: 12px; /* Tinggi kotak warna */
+    margin-right: 5px; /* Jarak di kanan kotak warna */
+}
+
+.footer {
+    background-color: #DED0B6;
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+}

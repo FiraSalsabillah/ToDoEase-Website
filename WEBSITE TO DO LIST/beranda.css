@@ -1,0 +1,188 @@
+/* Mengimpor font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variabel CSS untuk warna utama */
+:root {
+    --primary-color: #9A7E6F;
+    --secondary-color: #fff;
+    --text-color: #54473F;
+    --background-light: #f8f9fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #A79277;
+    color: var(--text-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #DED0B6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px;
+}
+
+.logo-img {
+    width: 300px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.nav-cta-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav {
+    margin-right: 30px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #fff;
+}
+
+.logout-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    margin-left: 30px;
+}
+
+.logout-btn:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+main {
+    padding: 40px 30px;
+    text-align: center;
+    max-width: 95%;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FEFAE0;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    font-size: 28px; /* Ukuran font untuk judul utama */
+    margin-bottom: 10px; /* Jarak bawah dari judul utama */
+    color: var(--text-color); /* Menggunakan warna teks yang sudah ditentukan */
+}
+
+main p {
+    font-size: 16px; /* Ukuran font untuk teks paragraf */
+    line-height: 1.6; /* Tinggi garis untuk teks yang lebih mudah dibaca */
+    color: var(--text-color); /* Menggunakan warna teks yang sudah ditentukan */
+}
+
+.start-btn {
+    display: inline-block; /* Memastikan tampil seperti tombol */
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 12px 24px; /* Padding untuk tombol */
+    border-radius: 40px; /* Sudut melengkung untuk tombol */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600; /* Menggunakan font-weight yang lebih tebal untuk tombol */
+    transition: background-color 0.3s, transform 0.3s; /* Transisi untuk perubahan warna dan efek hover */
+    margin-top: 60px; /* Jarak atas dari elemen sebelumnya */
+}
+
+.section-title {
+    text-align: center; /* Menyelaraskan teks di tengah */
+    font-size: 28px; /* Ukuran font untuk judul */
+    color: #FEFAE0; /* Menggunakan warna teks yang sudah ditentukan */
+    margin: 40px 0 20px; /* Memberikan jarak atas dan bawah */
+    font-weight: 600; /* Membuat teks lebih tebal */
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 95%;
+}
+
+.container {
+    flex: 1;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FEFAE0;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Padding di dalam kontainer */
+    text-align: center;
+}
+
+.container-logo {
+    width: 100px; /* Lebar logo */
+    height: auto; /* Tinggi otomatis mengikuti proporsi gambar */
+    margin-bottom: 10px; /* Jarak antara logo dan teks di bawahnya */
+}
+
+.container-link {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: var(--text-color); /* Menggunakan warna teks yang sesuai */
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.container-link:hover h2 {
+    color: var(--primary-color);
+}
+
+.container h2 {
+    font-size: 22px;
+    color: var(--text-color);
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #DED0B6;
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+}

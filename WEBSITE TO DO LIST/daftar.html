@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Page</title>
+    <link rel="stylesheet" href="daftar.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="Todoease.png" alt="Logo Website"> <!-- Ganti 'logo.png' dengan path gambar logo -->
+    </div>
+    <form onsubmit="handleSubmit(event)">
+        <h2>Daftar</h2>
+        
+        <label for="fullname">Nama Lengkap</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Masukkan nama lengkap" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+        
+        <button type="submit">Daftar</button>
+        <p>Sudah memiliki akun? <a href="login.html">Login</a></p>
+    </form>
+    
+    <script src="daftar.js"></script>
+</body>
+</html>

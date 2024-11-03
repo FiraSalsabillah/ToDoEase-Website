@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="Todoease.png" alt="Logo" class="logo-img">
+        <div class="nav-cta-container">
+            <nav class="nav">
+                <ul>
+                    <li><a href="beranda.html">Home</a></li>
+                    <li><a href="tasks.html">Tasks</a></li>
+                    <li><a href="report.html">Report</a></li>
+                </ul>
+            </nav>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <!-- Kalender -->
+    <div class="calendar">
+        <div class="calendar-header">
+            <button id="prevMonthBtn">&lt;</button>
+            <h2 id="monthYearDisplay"></h2>
+            <button id="nextMonthBtn">&gt;</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendarBody">
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Tombol Tambah Kegiatan -->
+    <div class="add-button" id="addEventBtn">
+        <span>+</span>
+    </div>
+
+    <!-- Form Tambah Aktivitas (Awalnya Tersembunyi) -->
+    <div id="addEventForm">
+        <h3>Tambah Aktivitas</h3>
+        <label for="activityName">Nama Aktivitas:</label><br>
+        <input type="text" id="activityName" name="activityName" required><br><br>
+
+        <label for="activityDate">Tanggal:</label><br>
+        <input type="date" id="activityDate" name="activityDate" required><br><br>
+
+        <!-- Pengingat -->
+        <label for="reminderCheckbox">
+            Setel Pengingat
+            <input type="checkbox" id="reminderCheckbox" name="reminderCheckbox" onchange="toggleReminderTime()">
+        </label>
+
+        <div id="reminderTimeContainer" style="display: none;">
+            <label for="reminderTime">Waktu Pengingat:</label><br>
+            <input type="time" id="reminderTime" name="reminderTime"><br><br>
+        </div>
+
+        <button id="saveEventBtn">Tambah</button>
+        <button id="cancelEventBtn">Batal</button>
+    </div>
+
+    <!-- Teks Sebelum Kontainer -->
+    <h2 class="status-heading">Rincian Aktivitas</h2>
+
+    <!-- Kontainer -->
+    <div class="container"></div> 
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div>
+            <p>&copy; 2024 ToDoEase. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="task.js"></script>
+
+</body>
+</html>
